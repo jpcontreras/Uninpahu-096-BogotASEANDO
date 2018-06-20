@@ -51,3 +51,21 @@ SELECT "scraps"."id", "scraps"."name", "scrap_types"."name"
 FROM "scraps"
 INNER JOIN "scrap_types" ON "scrap_types"."id" = "scraps"."scrap_type_id"
 WHERE "scraps"."id" = 1
+
+
+#Insert data into countries table
+
+INSERT INTO "countries" ("name", "code", "created_at", "updated_at") VALUES ('Colombia', '', '2018-06-20 00:11:04.084576', '2018-06-20 00:11:04.084576') 
+
+#Insert data into departaments table
+
+INSERT INTO "departaments" ("name", "code", "country_id", "created_at", "updated_at") VALUES ('Cundinamarca', '', 1, '2018-06-20 00:22:55.052578', '2018-06-20 00:22:55.052578') 
+
+#Insert data into cities table
+
+INSERT INTO "cities" ("name", "code", "departament_id", "created_at", "updated_at") VALUES ('Bogotá D.C.', '', 1, '2018-06-20 00:29:43.702743', '2018-06-20 00:29:43.702743') 
+
+
+
+
+
